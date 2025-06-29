@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:store_application/providers/auth_provider.dart';
 import 'package:store_application/providers/cart_provider.dart';
 import 'package:store_application/providers/favorites_provider.dart';
 import 'package:store_application/routes/app_router.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => FavoritesProvider()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
-        //ChangeNotifierProvider(create: (_) => AuthProvider()),
+        ChangeNotifierProvider(create: (_) => AuthProvider()),
       ],
       child: MaterialApp.router(
         routerConfig: AppRouter.router,

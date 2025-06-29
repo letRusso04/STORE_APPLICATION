@@ -53,7 +53,7 @@ class _FeaturedCarouselState extends State<FeaturedCarousel> {
                               top: Radius.circular(16),
                             ),
                             child: Image.network(
-                              product.imageUrl,
+                              product.images[0],
                               width: double.infinity,
                               fit: BoxFit.cover,
                               loadingBuilder:

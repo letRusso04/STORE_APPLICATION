@@ -17,7 +17,7 @@ class FavoritesScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            context.go('/'); // Navega directo a Home
+            context.go('/home'); // Navega directo a Home
           },
         ),
       ),

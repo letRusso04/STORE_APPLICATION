@@ -18,7 +18,7 @@ class ProductCard extends StatelessWidget {
       child: ListTile(
         onTap: onTap,
         leading: Image.network(
-          product.imageUrl,
+          product.images[0],
           width: 60,
           height: 60,
           fit: BoxFit.cover,
